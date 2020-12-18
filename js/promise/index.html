@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //    Promise 许诺
+       //    我以后会有钱的，买房，买车
+       //还有别的方法吗？
+       //异步 I/O 内存中切换到硬盘
+    //    setTimeout(function(){
+    //     console.log(1);
+    //    },1000);
+       //许下一个诺言
+       const p1=new Promise((resolve,reject) => {
+           //放费时的操作 百度 向后端发送请求
+        //    去一个土味情话网站，给我们返回一条土味情话一来一回http本质？
+        //    花时间的？ 花时间的事情轻放promise里面
+        //异步
+        //封装了一个一去一来的请求，需要花时间
+        // fetch 负责去取一下
+           fetch("http://127.0.0.1:60651/user.json")
+           .then(data => data.json())
+           .then(data => {
+            //    console.log(data);
+           
+            // 实现了这个诺言
+            // const p1=new Promise((resolve,reject)=>) 
+        //     resolve(data);
+        //    })
+            // setTimeout(() =>{
+            // console.log(1);
+            // },1000)
+            console.log(3);
+            resolve(1);
+       })
+       p1.then((data) => {
+           console.log(data);
+       })
+      console.log(2);
+   
+       //如果先输出2，再输出1
+     })
+   </script> 
+</body>
+</html>
