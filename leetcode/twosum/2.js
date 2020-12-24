@@ -18,16 +18,16 @@
     //callback
     //for +执行功能
     nums.forEach((e,i)=>map[e]=i);//O(n)以空间换时间
-    //console.log(map)
+    console.log(map)
     //?
-    for(let i=0;i<nums.length;i++){
-        let j=map[target-nums[i]];// 没有 undefinded
-        if(j&&j!==i){
-            res=[i,j];
-            break;
-        }
-    }
-    return res;
+    // for(let i=0;i<nums.length;i++){
+    //     let j=map[target-nums[i]];// 没有 undefinded
+    //     if(j&&j!==i){
+    //         res=[i,j];
+    //         break;
+    //     }
+    // }
+    // return res;
 
  }
  console.log(twosum([2,7,11,15],9));
