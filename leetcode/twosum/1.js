@@ -13,6 +13,7 @@ var twosum = function(nums, target) {
         for(let j=i+1;j<nums.length;j++){
             if(nums[i]+nums[j]==target){
                 arr=[i,j];
+                break;
             }
         }
     }
