@@ -34,4 +34,10 @@
        goods:[]
    }
    apifm （吐数据）
-   /goods?order=&page=&{n}&size=20&keyword=addidas   []
+   /goods?order=&page=${n}&size=20&keyword=addidas   []
+
+   - 页面的生命周期
+     谁先发生，适合做什么
+     onLoad 加载wxml,wxss，js 花的时间最少
+     onShow  wxml + wxss 需要进行渲染，  js 还没执行完   还不能交互的
+     onReady 
