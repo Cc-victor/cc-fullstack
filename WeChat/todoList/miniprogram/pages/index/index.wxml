@@ -1,0 +1,10 @@
+<wxs src="../../wxs/api.wxs" module="api"></wxs>
+<view class="container">
+  <view class="userinfo">
+    <button wx:else>
+      <image class="userinfo-avatar" src="{{userinfo"></image>
+    </button>
+
+  </view>
+</view>
+<text>{{api.formatTime(new Date(1609397067763))}</text>
