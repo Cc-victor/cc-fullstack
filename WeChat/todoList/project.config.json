@@ -45,8 +45,8 @@
     "search": {
       "list": []
     },
-    "window":{
-     "navigationBarTextStyle": "white"
+    "window": {
+      "navigationBarTextStyle": "white"
     },
     "conversation": {
       "list": []

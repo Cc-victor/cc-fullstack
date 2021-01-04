@@ -1,7 +1,7 @@
 // 有哪些情况会是undefined?
 let a; // 声名， 没有赋值
 // 变量声明时，JS类型由值来决定
-console.log(typeof a);  //undefined 1
+console.log(typeof a);    //undefined 1
 //undefined 2 函数没有返回值
 const fnNoReturn =() =>{}
 console.log(fnNoReturn(),'2');
@@ -14,5 +14,9 @@ const fn = (b) =>{
 console.log(fn(1,2,3));
 //当对象调用不存在的属性时，会返回undefined 4
 const o={c:'1'};
-console.log(o.d,'4');
-console.log(zg);
+console.log(o.d,'4'); //undefined
+console.log(zg);  //语法错误
+
+
+console.log(null == undefined); //true
+console.log(null === undefined); //false

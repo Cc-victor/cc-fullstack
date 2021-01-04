@@ -4,4 +4,13 @@ arr.push(6);//面向对象的
 console.log(arr.pop());
 arr.unshift(1);
 arr.shift(1);
-console.log(arr);
+// 把数组打印出来，有多少种方法
+for(let num in arr){
+console.log(num);
+}
+arr.forEach(item => {
+    console.log(item);
+})
+console.log(arr.join(""))
+console.log(arr.splice(0,arr.length));
+console.log(arr.map(item => item));
