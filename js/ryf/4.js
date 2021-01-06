@@ -3,8 +3,9 @@
 //    name:'',
 //    color:'',
 // }
-function cat(name,color){
- return{
+function Cat(name,color){
+//  console.log(name,color)
+    return{
      name,
      color
  }

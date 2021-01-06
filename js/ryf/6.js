@@ -2,6 +2,7 @@ function Cat(name,color){
     //new 的时候一定会执行Cat
     this.name=name;   //this？指向实例
     this.color=color;
+    // 内存
 }
 //原型对象
 Cat.prototype.eat=function(){
