@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "my-search":"/components/search/search",
+    "index-swiper":"/components/swiper/swiper"
+  }
+}

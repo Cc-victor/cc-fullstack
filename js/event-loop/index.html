@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // JS是单线程语言，同时只能执行一项任务
+    // 当初负责查找dom,style,addEventListener 
+    // js 简单 进程 process 1:n 线程 多线程
+    // 主|单线程负责  html css 渲染 +js 
+    // event 事件 ，js基于事件
+    const ele =document.getElementById('root');
+    window.onload=function(){
+
+    }
+    // setTimeout Promise ajax 耗时的任务，同步 异步
+    // 在主线程上 有一个任务队列 task queue 
+    //event-loop
+    //阻塞
+    ele.addEventListener('click',function(){
+
+    });
+    </script>
+</body>
+</html>

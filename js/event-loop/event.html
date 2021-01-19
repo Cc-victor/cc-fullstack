@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JS 单线程
+        // fs I/O 内存，块 硬盘 ajax
+        console.log('event-loop');//1
+        // setTimeout () =>{} 挂起
+        setTimeout(()=>{  //event-loop 认为 进入到 event-task 任务队列 -》 
+            // 属于主线程 队列结构 在主线程 添加一个事件
+            // 当主线程停下来之后，轮询 event-loop task-queue
+            console.log('setTimeout1');//2
+            Promise.resolve().then(data =>{ //promise
+                   console.log(2222)
+            })
+        },0)
+        setTimeout(()=>{
+            console.log('setTimeout2')
+        },0);
+        Promise.resolve().then(data=>{
+            console.log(1111);
+        })
+        console.log('event-loop end'); //3
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: -apple-system, sans-serif;
+    line-height: 2;
+    background: #fff;
+  }
+  .wrapper {
+    width: 800px;
+    height: 80vh;
+    padding: 20px;
+    border: 0;
+    background-color: white;
+    display: grid;
+    /*1fr 有什么用？ flex 1 有什么？ 
+      flex: 1给一个元素设置？  可以让这个元素成为主元素？ 
+      其它元素把该占的占了， 余下所有都归1 
+      flex  flex-direction:column; flex: 1  height: 1
+
+    */
+    grid-template-rows: 1fr auto;
+    /* grid-template-columns: 100px; */
+  }
+  .terms-and-conditions { /*高度 overflow:scroll 居中  */
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .last{
+      border: 1px solid black;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="terms-and-conditions">
+     <h1>DOMO事件处理程序，容颜永驻的秘诀到底是啥</h1>
+      <p>  &nbsp; &nbsp;   云想衣裳花想容 春风拂槛露华浓。我想大概是每一个每一个女孩子的梦想吧！对于每一
+          个女孩子来讲，都应该是这样想的：年轻时 沉鱼落雁，年老时 依然沉鱼落雁 ，但是 沉鱼落雁，
+          只是梦想，人老珠黄才是现实。不过也有列外，在javascript 中的DOMO事件处理程序从最开始
+          被第四代Web浏览器开始被追捧，一直美丽到现在，所有现代浏览器仍然对她朝思暮想，我想讲到
+          这里，大部分女孩子 不 所有女孩子都要开始疯狂了吧，可是我不疯狂，因为我是男孩子，但是还
+          是有点好奇心呢，她的秘诀到底是啥呢？去看看吧。
+          </p>
+      <p>
+        &nbsp; &nbsp;秘诀其实很简单，就是要使用JavaScript指定事件处理程序，必须先取得要操作对象的引用。
+            看不懂？ 没关系，我也不懂。让我们一起来分析一下
+            每个元素都有通常小写的事件处理程序
+            比如onclick。只要把这个赋值为一个函数即可：<br>
+             
+                let btn = document . get E1 ement ById ( "myBtn") ;<br>
+                btn.onclick = function() {<br>
+                console.1og ("Clicked");<br>
+                }
+        <p>
+            &nbsp; &nbsp;这里先从文档中取得按钮，然后给它的onclick事件处理程序赋值-个函数。注意，前面的代码
+        在运行之后才会给事件处理程序赋值。因此如果在页面中上面的代码出现在按钮之后,则有可能出现用
+        户点击按钮没有反应的情况。
+        像这样使用DOM0方式为事件处理程序赋值时，所赋函数被视为元素的方法。因此，事件处理程
+        序会在元素的作用域中运行，即this等于元素。下面的例子演示了使用this引用元素本身:
+                let btn = document . getElementById ("myBtn") ;<br>
+                btn. onclick = function()<br>
+                console. log (this.id); /1 "myBtn"
+        </p>
+        <p>
+        点击按钮，这段代码会显示元素的ID。这个ID是通过this.id获取的。不仅仅是id,在事件处
+        理程序里通过thio可以访问元素的任何属性和方法。以这种方式添加事件处理程序是注册在事件流的
+        冒泡阶段的。
+        通过将事件处理程序属性的值设置为null,可以移除通过DOM0方式添加的事件处理程序，如下
+        面的例子所示:
+        btn. onclick = nu1l; // 移除事件处理程序
+        把事件处理程序设置为null,再点击按钮就不会执行任何操作了。
+        </p>
+        <div class="last"> 
+           <p>
+        注意:<br>
+        &nbsp; &nbsp;如果事件处理程序是在HTML中指定的，则onclick属性的值是一个包装相应
+        HTML事件处理程序属性值的函数。这些事件处理程序也可以通过在JavaScript 中将相应
+        属性设置为null来移除。
+            </p>
+        </div>
+      </p>
+    </div>
+    
+  </div>
+</body>
+</html>

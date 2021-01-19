@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        img 1000px 500
+        375 750 ?
+        等比例缩放
+       设备device像素指的是物理像素， 
+       viewport 视窗 是移动才有的 pc端没有
+       在PC时代，页面是比较大的， 基于img 等比例缩放的理解
+       一个大的PC页，要显示在较小的手机里，也是可以的，缩放一下就好了
+       。看不清怎么办？使用移动端特有的手势pinch（两个手指头）
+       放大来看，为什么要加user-scaleable:no maximum-scale=1 
+       viewport放大页面很不稳定
+       现在已全面进入移动时代 PC战都有相对应的手机网站，
+       所以没有了上面的需求
+       www.taobao.com -> redirect https://main.m.taobao.com/?sprefer=sypc00
+       前端为什么这么吃香的原因？前端需要  做PC|移动端Mobile|小程序|App
+       www.taobao.com手机端 -> 请求服务器http协议 -> 服务器判断
+       设备是手机 返回移动官网 -> main.m.taobao.com
+       服务器http 返回一个302 转态码 url main.m.taobao.com
+    </p>
+</body>
+</html>
