@@ -6,7 +6,7 @@
    antd  叫框架  大型
    业务库?
     1. 轻量级的CSS 框架， semantic-ui bootstrap
-    2. 存储  lokijs
+    2. 存储  lokijs  database
        - 数据表 notes
        - mysql ？ 有没有前端数据存储的方案？  mongodb NOSQL
           cookie 服务器种在客户端的文本数据 登录每次http 请求都会发送 
@@ -14,4 +14,7 @@
           在这里 不适合 比较小
        - localStorage  选择   空间 5MB
        - IndexDB
+     -  循环JSX
+        业务中建议map写在
+        render return 外面
 - Notes 笔记 
