@@ -1,0 +1,9 @@
+import express from 'express';
+import * as postController from './post.controller';
+
+const router = express.Router();  // 得到路由实例
+//restful   某文章
+// 模块化  只负责定义路由，
+router.get('/posts/:postId',postController.show);
+
+export default  router
