@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App .app-content{
+    padding-top: 72px;
+    clear: both;
+}

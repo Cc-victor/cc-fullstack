@@ -1,0 +1,50 @@
+@import '../../styles/common.less';
+
+.header {
+    height: 0.5rem;
+    width: 100%;
+    background-color: @theme-bg-red;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 1.3rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 1rem;
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: @font-gray;
+        background-color: #fff;
+        height: 0.3rem;
+        margin-left: 0.1rem;
+        margin-right: 0.15rem;
+        border-radius: 0.03rem;
+
+        .search-icon {
+            padding-left: 0.06rem;
+            width: 0.2rem;
+            height: 0.2rem;
+            color: @font-gray;
+        }
+
+        input {
+            width: 90%;
+            height: 0.3rem;
+            border: none;
+            outline: none;
+            background: @bg-color;
+            text-indent: 0.05rem;
+            border-radius: 0.04rem;
+        }
+    }
+}
