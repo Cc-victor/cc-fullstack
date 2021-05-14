@@ -1,7 +1,7 @@
 var express = require('express');
 var cors = require('cors');  //后端cors 中间件
 const app = express();
-// app.use(cors());
+app.use(cors());
 app.get('/product',(req,res)=>{
     res.json({
         a:1,
